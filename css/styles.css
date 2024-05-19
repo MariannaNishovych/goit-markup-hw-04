@@ -76,6 +76,22 @@ border-bottom: 1px solid #e7e9fc;
 .header-link:focus {
     color: #404bbf;
 }
+.current {
+position: relative;
+color: #404bbf;
+}
+
+.header-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    background-color: #404bbf;
+}
 .address {
 font-style: normal;
 margin-left: auto;
@@ -175,7 +191,15 @@ padding: 120px 0;
     gap: 24px;
     justify-content: center;    
 }
-
+.feature-icons {
+    padding: 24px 100px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
 .features-item {
     display: inline-block;
     max-width: 264px;
@@ -236,6 +260,36 @@ text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0;
+}
+
+.social-icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.social-icon-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    align-items: center;
+    justify-content: center;
+} 
+.social-item-list {
+    width: 40px;
+    height: 40px;
+}
+
+.team-icon {
+    fill: #f4f4fd;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.social-icon-link:hover {
+    background-color: #404bbf;
 }
 
 
