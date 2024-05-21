@@ -73,6 +73,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         color: #2e2f42;
         padding: 24px 0;
         display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -109,7 +110,7 @@ margin-left: auto;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
@@ -340,6 +341,12 @@ row-gap: 48px;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .image-card {
 position: relative;
 overflow: hidden;
@@ -364,9 +371,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-item:hover .overlay-text {
     transform: translateX(0);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .port-cont {
